@@ -1,0 +1,66 @@
+*{
+  margin : 0; 
+  padding : 0; 
+  box-sizing : border-box; 
+  font-family : gilroy; 
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    width: 80%;
+    margin: auto;
+    /* background-color: lightblue; */
+    margin-top: 3%;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.card{
+    margin-top: 20px;
+    /* height: 30vh; */
+    border-radius: 12px;
+    border: 1px solid rgba(128, 128, 128, 0.414);
+    padding: 20px;
+    width: 21%;
+    /* background: lightcoral; */
+}
+
+.img{
+    height: 24vh;
+    width: 100%;
+    /* background: lightgoldenrodyellow; */
+    border-radius: 10px;
+}
+
+.padding{
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+
+.cards{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pad{
+    padding-top: 10px;
+}
+
+.footer{
+    height: 10vh;
+    border-top: 1px solid rgba(128, 128, 128, 0.414);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
