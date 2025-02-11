@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: #dac5a7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+
+  .view-1 {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 3.4rem;
+      line-height: 1.1;
+      font-weight: 200;
+
+      i {
+        border-bottom: 2px solid #dac5a7;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      line-height: 1.4;
+      padding: 8% 0%;
+    }
+  }
+
+  .service-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    margin: 7% 0;
+
+    i {
+      padding: 10%;
+      border-radius: 50%;
+      border: 1px solid #dac5a7;
+      background-color: #181716;
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 1rem;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (min-width: 1020px) {
+
+    html{
+        font-size: clamp(16px ,1vw , 20px);
+    }
+
+  main {
+    
+    .view-1 {
+      width: 85%;
+      margin: auto;
+      padding: 2%;
+
+      img {
+        width: 40%;
+      }
+
+      h1 {
+        font-size: 7.8rem;
+        line-height: 1.2;
+        font-weight: 200;
+      }
+
+      p {
+        font-size: 1.4rem;
+        width: 50%;
+        line-height: 1.2;
+        letter-spacing: 1px;
+        padding: 2% 0%;
+      }
+
+    }
+
+    .service-button {
+        gap: 20px;
+        margin: 4% 0;
+    
+        i {
+          padding: 10%;
+          border-radius: 50%;
+          border: 1px solid #dac5a7;
+          background-color: #181716;
+        }
+    
+        p {
+          font-weight: 200;
+          font-size: 1rem;
+          white-space: nowrap;
+        }
+      }
+
+ 
+
+  }
+}
