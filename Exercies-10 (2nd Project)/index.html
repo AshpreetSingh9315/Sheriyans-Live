@@ -18,7 +18,7 @@
                     <h1
                         class="text-2xl cursor-pointer tracking-wide pt-2">FYLLA</h1>
                 </div>
-                <div class="right flex items-center center gap-10">
+                <div class="right lg:flex items-center center gap-10 hidden">
                     <ul class="flex gap-8">
                         <li><a class="text-sm" href="#">WORK</a></li>
                         <li><a class="text-sm" href="#">SERVICES</a></li>
@@ -32,7 +32,7 @@
                         <button
                             class="px-4 py-2 bg-black text-white rounded-lg">LET'S
                             TALK</button>
-                        <p class="h-10 w-[2px] bg-black"></p>
+                        <p class="h-10 w-[1px] bg-black"></p>
                         <p
                             class="px-2 py-1 border rounded-full cursor-pointer">IN</p>
                         <p
@@ -41,67 +41,255 @@
                             class="px-2 py-1 border rounded-full cursor-pointer">EN</p>
                     </div>
                 </div>
+                <div class="lg:hidden block">
+                    <i class="ri-menu-3-line text-3xl"></i>
+                </div>
             </nav>
         </header>
 
         <main class="px-8">
-            <section class="main w-full my-8">
+            <section class="main w-full lg:my-8 my-16">
                 <div class="mb-6">
-                    <p class="text-xs text-zinc-700">ABOUT US</p>
-                    <h1 class="text-8xl">Creative Studio</h1>
-                    <h1 class="text-8xl">that inspires.</h1>
+                    <p class="text-xs text-zinc-700 tracking-tighter">ABOUT
+                        US</p>
+                    <h1
+                        class="lg:text-8xl text-7xl -ml-1  tracking-tighter">Creative
+                        Studio</h1>
+                    <h1
+                        class="lg:text-8xl text-7xl -ml-1  tracking-tighter">that
+                        inspires.</h1>
                 </div>
-                <div class="rounded-lg w-full h-100 bg-red-400">
+                <div class="rounded-lg w-full h-100">
                     <img class="rounded-lg w-full h-full object-cover"
                         src="https://images.unsplash.com/photo-1736329279938-372e9e471795?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt>
                 </div>
             </section>
 
-            <section class="values w-full  flex flex-row justify-between items-start h-[40%]">
-                <div class="leading-none w-[70%] h-full flex flex-col justify-between items-start gap-70">
-                   <div>
-                    <p class="text-xs text-zinc-700">OUR VALUES</p>
-                    <h1 class="text-7xl">Our Vision is to Connect</h1>
-                    <h1 class="text-7xl">with he world through</h1>
-                    <h1 class="text-7xl">innovation</h1>
-                   </div>
+            <section
+                class="values w-full  lg:flex lg:flex-row lg:justify-between lg:items-start flex-col">
+                <div
+                    class="leading-none lg:w-[70%] h-full flex flex-col justify-between items-start lg:gap-50">
                     <div>
-                        <button class="px-7 py-3 bg-black text-white rounded-lg">Our Services</button>
+                        <p class="lg:text-xs text-md text-zinc-700">OUR
+                            VALUES</p>
+                        <h1 class="lg:text-8xl text-7xl  tracking-tighter">Our
+                            Vision is to Connect</h1>
+                        <h1 class="lg:text-8xl text-7xl  tracking-tighter">with
+                            he world through</h1>
+                        <h1
+                            class="lg:text-8xl text-7xl  tracking-tighter">innovation</h1>
+                    </div>
+                    <div>
+                        <button
+                            class="px-7 py-3 bg-black text-white rounded-lg lg:my-0 my-8">Our
+                            Services</button>
                     </div>
                 </div>
-                <div class="flex flex-col w-[30%] gap-2 border-l-1 h-[40%]">
-                    <div class=" border-b-1 flex flex-row justify-between gap-8 mx-8 p-6">
-                        <img src="assets/cart.png" class="w-12 h-12 object-cover" alt="">
+                <div
+                    class="flex flex-col lg:w-[30%] lg:gap-2 gap-6 border-l-1 h-[40%]">
+                    <div
+                        class=" border-b-1 flex flex-row justify-between gap-8 lg:mx-8 mx-4 lg:p-6 p-5">
+                        <img src="assets/cart.png"
+                            class="w-12 h-12 object-cover" alt>
                         <div class="flex flex-col">
-                        <h1 class="text-3xl">Vision</h1>
-                        <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Amet voluptas itaque tenetur numquam modi,
-                            dolore nulla, facilis blanditiis aut iure ut ducimus
-                            possimus atque at expedita suscipit unde labore
-                            rerum laudantium</p>
+                            <h1 class="text-3xl text-bold">Vision</h1>
+                            <p class="text-sm">Lorem ipsum, dolor sit amet
+                                consectetur adipisicing
+                                elit. Amet voluptas itaque tenetur numquam modi,
+                                dolore nulla, facilis blanditiis aut iure ut
+                                ducimus
+                                possimus atque at expedita suscipit unde labore
+                                rerum laudantium</p>
                         </div>
                     </div>
-                    <div class=" border-b-1 flex flex-row justify-between gap-8 mx-8 p-6">
-                        <img src="assets/chat.png" class="w-12 h-12 object-cover" alt="">
+                    <div
+                        class=" border-b-1 flex flex-row justify-between gap-8 lg:mx-8 mx-4 lg:p-6 p-5">
+                        <img src="assets/chat.png"
+                            class="w-12 h-12 object-cover" alt>
                         <div class="flex flex-col">
-                        <h1 class="text-3xl">Innovation</h1>
-                        <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Amet voluptas itaque tenetur numquam modi,
-                            dolore nulla, facilis blanditiis aut iure ut ducimus
-                            possimus atque at expedita suscipit unde labore
-                            rerum laudantium</p>
+                            <h1 class="text-3xl text-bold">Innovation</h1>
+                            <p class="text-sm">Lorem ipsum, dolor sit amet
+                                consectetur adipisicing
+                                elit. Amet voluptas itaque tenetur numquam modi,
+                                dolore nulla, facilis blanditiis aut iure ut
+                                ducimus
+                                possimus atque at expedita suscipit unde labore
+                                rerum laudantium</p>
                         </div>
                     </div>
-                    <div class=" border-b-1 flex flex-row justify-between gap-8 mx-8 p-6">
-                        <img src="assets/return-box.png" class="w-12 h-12 object-cover" alt="">
+                    <div
+                        class=" border-b-1 flex flex-row justify-between gap-8 lg:mx-8 mx-4 lg:p-6 p-5">
+                        <img src="assets/return-box.png"
+                            class="w-12 h-12 object-cover" alt>
                         <div class="flex flex-col">
-                        <h1 class="text-3xl">Connection</h1>
-                        <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Amet voluptas itaque tenetur numquam modi,
-                            dolore nulla, facilis blanditiis aut iure ut ducimus
-                            possimus atque at expedita suscipit unde labore
-                            rerum laudantium</p>
+                            <h1 class="text-3xl text-bold">Connection</h1>
+                            <p class="text-sm">Lorem ipsum, dolor sit amet
+                                consectetur adipisicing
+                                elit. Amet voluptas itaque tenetur numquam modi,
+                                dolore nulla, facilis blanditiis aut iure ut
+                                ducimus
+                                possimus atque at expedita suscipit unde labore
+                                rerum laudantium</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section
+                class="relative py-10 h-400 border-t-1 my-8 w-full flex lg:flex-row flex-col lg:justify-center  items-start">
+                <div class="lg:sticky top-0 lg:w-[35%] w-[100%] flex flex-col items-start">
+                    <h1 class="text-5xl">OUR <br class="lg:block hidden">
+                        TEAM</h1>
+                    <p class="text-md mt-3 text-zinc-800">Lorem ipsum dolor sit
+                        amet consectetur adipisicing elit.
+                        Inventore eveniet animi expedita repudiandae atque
+                        praesentium iure aspernatur impedit possimus dolor.</p>
+                </div>
+                <div class="w-[65%]  px-10 border-l-1 mt-8 lg:mt-0">
+                    <div class="cards flex lg:flex-row flex-col justify-between items-start w-full">
+                        <div class="card pb-6 lg:pb-0">
+                            <div class="lg:w-90 w-70 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1739251775751-e8e8e4d6691e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+
+                        <p class="lg:h-72 lg:w-[1px] h-[1px] w-65 bg-black"></p>
+
+                        <div class="card pt-10 lg:pt-0">
+                            <div class="lg:w-90 w-70 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1739321549350-0357af593300?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards flex lg:flex-row flex-col justify-between items-start w-full">
+                        <div class="card pb-6 lg:pb-0">
+                            <div class="lg:w-90 w-70 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1739302776943-2d375697e3e1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+
+                        <p class="lg:h-72 lg:w-[1px] h-[1px] w-65 bg-black"></p>
+
+                        <div class="card pt-10 lg:pt-0">
+                            <div class="lg:w-90 w-70 h-55">
+                                <img
+                                    src="https://plus.unsplash.com/premium_photo-1738935667408-42e1eec024ec?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards flex lg:flex-row flex-col justify-between items-start w-full">
+                        <div class="card pb-6 lg:pb-0">
+                            <div class="lg:w-90 w-70 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1739208682323-057b33340b18?q=80&w=1959&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+
+                        <p class="lg:h-72 lg:w-[1px] h-[1px] w-65 bg-black"></p>
+
+                        <div class="card pt-10 lg:pt-0">
+                            <div class="lg:w-90 w-70 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1739104627818-d9159a7daa8d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards lg:flex hidden justify-between items-start w-full my-8">
+                        <div class="card">
+                            <div class="w-90 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1739036462754-6e86520998a2?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+
+                        <p class="h-72 w-[1px] bg-black"></p>
+
+                        <div class="card">
+                            <div class="w-90 h-55">
+                                <img
+                                    src="https://plus.unsplash.com/premium_photo-1738935668164-b6bb6ee116e5?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards lg:flex hidden justify-between items-start w-full my-8">
+                        <div class="card">
+                            <div class="w-90 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1738599937833-1413fe3fa64f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
+                        </div>
+
+                        <p class="h-72 w-[1px] bg-black"></p>
+
+                        <div class="card">
+                            <div class="w-90 h-55">
+                                <img
+                                    src="https://images.unsplash.com/photo-1738444515789-0a1a4c4982dc?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                    alt="img1"
+                                    class="w-full h-full rounded-lg object-cover">
+                            </div>
+                            <div class="flex flex-col my-2">
+                                <h1 class="text-2xl">John Doe</h1>
+                                <p class="text-sm ml-1">CEO</p>
+                            </div>
                         </div>
                     </div>
                 </div>
