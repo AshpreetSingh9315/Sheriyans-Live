@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "gilroy";
+  background-color: #f1f1f1;
+}
+
+.header {
+  padding: 1.5rem;
+  width: 100%;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .center {
+  display: none;
+}
+.header .end {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header .end i {
+  font-size: 1.6rem;
+}
+.header .end .nav-btn {
+  padding: 0.5rem 1rem;
+  background-color: #000;
+  color: white;
+  border-radius: 1rem;
+  font-size: larger;
+  border: 1px solid #000;
+}
+
+.main {
+  padding: 1.5rem;
+  width: 100%;
+}
+.main .view-1 {
+  display: flex;
+  flex-direction: column;
+}
+.main .view-1 .top {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.main .view-1 .top h1 {
+  font-size: 4rem;
+}
+.main .view-1 .top p {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+.main .view-1 .end {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-areas: "a a b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c" "a a c c";
+}
+.main .view-1 .end .img-1 {
+  grid-area: a;
+}
+.main .view-1 .end img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .view-1 .end .img-2 {
+  grid-area: b;
+}
+.main .view-1 .end .img-3 {
+  grid-area: c;
+}
+.main .view-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 4.3rem 0;
+}
+.main .view-2 .destination-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.main .view-2 .destination-top h1 {
+  font-size: 2.3rem;
+}
+.main .view-2 .destination-top p {
+  font-size: 1.3rem;
+  opacity: 0.8;
+  padding-left: 2px;
+}
+.main .view-2 .destination-end {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main .view-2 .destination-end .cards {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  overflow-x: auto;
+}
+.main .view-2 .destination-end .cards .card {
+  padding: 2rem 0;
+}
+.main .view-2 .destination-end .cards .card .img {
+  height: 400px;
+  width: 300px;
+  border-radius: 1rem;
+  background: #000;
+}
+.main .view-2 .destination-end .cards .card .img img {
+  width: 100%;
+  border-radius: 1rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .view-2 .destination-end .cards .card h1 {
+  padding: 0.6rem 0rem;
+  font-size: 1.3rem;
+}
+.main .view-2 .destination-end .butn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .view-2 .destination-end .butn .des-btn {
+  padding: 1rem 4rem;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 1rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: linear all 0.1s;
+}
+.main .view-2 .destination-end .butn .des-btn:hover {
+  background-color: black;
+  color: white;
+}
+.main .view3 {
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem 0;
+}
+.main .view3 .start {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.main .view3 .start h1 {
+  font-size: 2.7rem;
+}
+.main .view3 .start .story-img {
+  width: 100%;
+  height: 300px;
+  border: 1px solid transparent;
+  border-radius: 1rem;
+}
+.main .view3 .start .story-img img {
+  width: 100%;
+  border: 1px solid transparent;
+  height: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .view3 .start .texts .p1 {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-size: large;
+}
+.main .view3 .start .texts .p2 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.1rem 0 0.9rem 0;
+}
+.main .view3 .end {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.main .view3 .end .card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  flex-direction: row;
+}
+.main .view3 .end .card .img {
+  height: 150px;
+  width: 40%;
+  width: 150px;
+  border-radius: 1rem;
+  background-color: gray;
+}
+.main .view3 .end .card .img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+.main .view3 .end .card .card-p {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.main .view3 .end .card .card-p .p1 {
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-size: large;
+}
+.main .view3 .end .card .card-p .p2 {
+  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.1rem 0 0.4rem 0;
+}
+.main .view3 .end .des-btn {
+  margin: 1rem 0;
+  padding: 1rem 4rem;
+  background-color: #f1f1f1;
+  color: black;
+  border-radius: 1rem;
+  border: 1px solid black;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: linear all 0.1s;
+}
+.main .view3 .end .des-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media (min-width: 1020px) {
+  .center {
+    display: block !important;
+  }
+  .center ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .center ul li {
+    list-style: none;
+  }
+  .center ul a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.2rem;
+  }
+  .main {
+    height: 80%;
+    width: 100%;
+  }
+  .main .view-1 {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .main .view-1 .top {
+    width: 45%;
+    gap: 1.2rem;
+  }
+  .main .view-1 .top h1 {
+    font-size: 5rem;
+  }
+  .main .view-1 .top p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  .main .view-1 .end {
+    width: 55%;
+    gap: 1rem;
+    grid-template-areas: ". . b b" "a a b b" "a a b b" "a a b b" "a a c c" "a a c c" "a a c c" ". . c c";
+  }
+  .main .view-1 .end img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main .view-2 {
+    padding: 8rem 0;
+  }
+  .main .view-2 .destination-top h1 {
+    font-size: 3rem;
+  }
+  .main .view-2 .destination-end {
+    display: flex;
+    justify-content: center;
+  }
+  .main .view-2 .destination-end .butn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main .view-2 .destination-end .des-btn {
+    display: flex;
+    padding: 1rem 4.1rem;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 1rem;
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: linear all 0.1s;
+  }
+  .main .view-2 .destination-end .des-btn:hover {
+    background-color: black;
+    color: white;
+  }
+  .main .view3 {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 0.3rem 0;
+  }
+}/*# sourceMappingURL=style.css.map */
