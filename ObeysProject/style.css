@@ -71,9 +71,9 @@
   text-transform: uppercase;
   font-family: "Plain-Regular";
   font-weight: 600;
-  animation: anime 1.5s infinite linear;
+  animation: loader 1.5s infinite linear;
 }
-@keyframes anime {
+@keyframes loader {
   0% {
     font-family: "Plain-Regular";
     color: white;
@@ -108,9 +108,8 @@
 }
 
 #main {
-  height: 100vh;
-  width: 100vw;
   background-color: #151515;
+  overflow-x: hidden;
 }
 #main .header {
   padding: 3rem 7.6rem;
@@ -141,6 +140,7 @@
   width: -moz-max-content;
   width: max-content;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: start;
   flex-direction: column;
@@ -163,12 +163,285 @@
 #main .hero .subhero .border {
   border-bottom: 10px solid white;
   display: inline-block;
+  transition: all 0.2 ease-in-out;
 }
-#main .hero .subhero:nth-child(2):before {
+#main .hero .subhero .border:hover {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+  z-index: 9999;
+}
+#main .hero::after {
   content: "01";
+  font-family: "Silk-Serif-Light";
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  font-size: 3.4rem;
+}
+#main .video-container {
+  width: 70vw;
+  margin: 8rem 0;
+  height: 69vh;
+  position: relative;
+}
+#main .video-container .video-btn {
+  width: 8rem;
+  position: absolute;
+  height: 8rem;
+  left: 100%;
+  z-index: 9999;
+  top: -8%;
+  border: 1px solid transparent;
+  background-color: #FFA63D;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+#main .video-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  z-index: 999;
+  left: 41%;
+}
+#main .video-container .video {
+  width: 100%;
+  position: absolute;
+  left: 41%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .video-container .video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .projects {
+  min-height: 100vh;
+  width: 100vw;
+}
+#main .about {
+  min-height: 100vh;
+  width: calc(100% - 25vw);
+  margin-left: 25vw;
+  padding: 1rem 4rem 0 0;
+}
+#main .about h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  padding: 5rem 0;
+  position: relative;
+}
+#main .about .number::after {
+  content: "03";
+  font-family: "Silk-Serif-Light";
+  position: absolute;
+  top: 5rem;
+  left: -10rem;
+  font-size: 3.4rem;
+}
+#main .about .underline {
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
+}
+#main .about .text {
+  font-size: 2.1rem;
+  line-height: 1.1;
+  padding: 3rem 0;
+  width: 50%;
+}
+#main .about .about-bottom {
+  display: flex;
+  flex-direction: column;
+}
+#main .about .about-bottom .about-left {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+#main .about .about-bottom .about-left .imgs {
+  height: 30%;
+  width: 50%;
+}
+#main .about .about-bottom .about-left img {
+  width: 100%;
+  margin-right: 3rem;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .about .about-bottom .about-left p {
+  width: 30%;
+  font-family: "Plain-Light";
+  font-size: 1.1rem;
+}
+#main .about .about-bottom .achivement {
+  padding: 4rem;
+  width: 30vw;
+  aspect-ratio: 1/1.1;
+  display: flex;
+  position: relative;
+  margin-top: -30vh;
+  margin-left: 24vw;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #3F7DF4;
+}
+#main .about .about-bottom .achivement .underline {
+  width: 100%;
+  height: 0.1rem;
+  background-color: white;
+}
+#main .about .about-bottom .achivement .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#main .about .about-bottom .achivement .first h1 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+#main .about .about-bottom .achivement .first p {
+  width: 30%;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+#main .work {
+  padding: 6rem 0;
+}
+#main .work .work-with {
+  min-height: 20vh;
+  width: calc(100% - 25vw);
+  margin-left: 25vw;
+  padding: 1rem 4rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#main .work .work-with .underline {
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
+}
+#main .work .work-with p {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+#main .work .marquee {
+  display: flex;
+  flex-direction: column;
+}
+#main .work .marquee .elem {
+  display: flex;
+  white-space: nowrap;
+}
+#main .work .marquee .elem h1 {
+  animation: anime 15s linear infinite;
+  margin: 0 20px 0 0;
+  font-size: 6rem;
+  font-weight: 300;
+  -webkit-text-stroke: 0.5px white;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+#main .work .marquee .elem h1 span {
+  font-weight: 300;
+  -webkit-text-stroke: 0.5px white;
+  color: transparent;
+}
+@keyframes anime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+#main .work .marquee .elem2 {
+  display: flex;
+  flex-direction: row-reverse;
+  white-space: nowrap;
+}
+#main .work .marquee .elem2 h1 {
+  margin: 0 0 0 20px;
+  font-size: 6rem;
+  animation: anime2 15s linear infinite;
+  font-weight: 300;
+  -webkit-text-stroke: 0.5px white;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+#main .work .marquee .elem2 h1 span {
+  font-weight: 300;
+  -webkit-text-stroke: 0.5px white;
+  color: transparent;
+}
+@keyframes anime2 {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100% - 20px));
+  }
+}
+#main .footer {
+  min-height: 100vh;
+  width: calc(100% - 25vw);
+  margin-left: 25vw;
+  padding: 3rem 4rem 0rem 0;
+}
+#main .footer h1 {
+  font-size: 7rem;
+  padding-bottom: 4rem;
+  font-weight: 400;
+  position: relative;
+}
+#main .footer h1::after {
+  content: "04";
   font-family: "Silk-Serif-Light";
   position: absolute;
   top: 0;
   left: -10rem;
   font-size: 3.4rem;
+}
+#main .footer .underline {
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
+}
+#main .footer .footer-middle {
+  padding: 6.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#main .footer .footer-middle .left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#main .footer .footer-middle .left, #main .footer .footer-middle .middle p, #main .footer .footer-middle .right p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+#main .footer .footer-middle .menus {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+#main .footer .footer-end {
+  padding: 2.4rem 0;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: start;
 }/*# sourceMappingURL=style.css.map */
