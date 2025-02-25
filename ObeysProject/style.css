@@ -25,7 +25,7 @@
 #crsr {
   height: 2rem;
   width: 2rem;
-  position: absolute;
+  position: fixed;
   z-index: 99999;
   mix-blend-mode: difference;
   border: 2px solid rgba(255, 255, 255, 0.844);
@@ -36,8 +36,10 @@
 #loader {
   height: 100%;
   width: 100%;
-  position: absolute;
-  z-index: 9999;
+  position: fixed;
+  overflow: hidden;
+  z-index: 99999999;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -192,7 +194,7 @@
   z-index: 9999;
   top: -8%;
   border: 1px solid transparent;
-  background-color: #FFA63D;
+  background-color: #ffa63d;
   color: white;
   font-size: 2rem;
   display: flex;
@@ -215,6 +217,7 @@
   position: absolute;
   left: 41%;
   height: 100%;
+  opacity: 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -224,9 +227,326 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-#main .projects {
+#main .projects-container {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
+  margin-bottom: 10rem;
+}
+#main .projects-container .projects-text {
+  width: calc(100% - 25vw);
+  margin-left: 25vw;
+  padding: 1rem 4rem 0 0;
+}
+#main .projects-container .projects-text h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  padding: 1rem 0 3rem;
+  position: relative;
+}
+#main .projects-container .projects-text .number::after {
+  content: "02";
+  font-family: "Silk-Serif-Light";
+  position: absolute;
+  top: 1.6rem;
+  left: -10rem;
+  font-size: 3.4rem;
+}
+#main .projects-container .projects-text .underline {
+  width: 100%;
+  height: 0.2rem;
+  background-color: white;
+}
+#main .projects-container .projects-text .text {
+  font-size: 2.1rem;
+  line-height: 1.1;
+  padding: 3rem 0;
+  width: 50%;
+}
+#main .projects-container .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+#main .projects-container .projects .line-1 {
+  padding: 10rem 7.6rem 0rem 7.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+#main .projects-container .projects .line-1 .main-project {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+#main .projects-container .projects .line-1 .main-project .pro-1 {
+  position: relative;
+}
+#main .projects-container .projects .line-1 .main-project .pro-1 .imgs_container {
+  height: 68vh;
+  width: 23vw;
+  overflow: hidden;
+  position: relative;
+}
+#main .projects-container .projects .line-1 .main-project .pro-1 .imgs_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .projects-container .projects .line-1 .main-project .pro-1 .upper-text {
+  color: white;
+  font-family: "Plain-Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: -11vh;
+}
+#main .projects-container .projects .line-1 .main-project .pro-1:nth-child(2) .imgs_container {
+  height: 89vh;
+  width: 29vw;
+}
+#main .projects-container .projects .line-1 .pro-2 {
+  border: 2px solid white;
+  height: 44vh;
+  width: 22vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main .projects-container .projects .line-1 .pro-2 svg {
+  height: 30%;
+  width: 30%;
+}
+#main .projects-container .projects .line-1 .pro-2 .fill {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+#main .projects-container .projects .line-1 .pro-2 .fill p {
+  color: black;
+  width: 60%;
+  transition: all 0.5s ease;
+  transition-delay: 0.4s;
+  font-size: 1.1rem;
+  opacity: 0;
+  font-weight: 400;
+}
+#main .projects-container .projects .line-1 .pro-2:hover .fill {
+  transform: scale(1);
+}
+#main .projects-container .projects .line-1 .pro-2:hover .fill p {
+  transform: scale(1);
+  opacity: 1;
+}
+#main .projects-container .projects .line-2 {
+  padding: 0rem 7.6rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: start;
+}
+#main .projects-container .projects .line-2 .main-project {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 2rem;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1 {
+  position: relative;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1 .imgs_container {
+  height: 68vh;
+  width: 23vw;
+  overflow: hidden;
+  position: relative;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1 .imgs_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1 .upper-text {
+  color: white;
+  font-family: "Plain-Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: -11vh;
+  z-index: 9999999;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1:nth-child(1) .imgs_container {
+  margin-top: 30%;
+  position: relative;
+  height: 89vh;
+  width: 29vw;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1:nth-child(1) .upper-text {
+  color: white;
+  font-family: "Plain-Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: 8vh;
+  z-index: 9999999;
+}
+#main .projects-container .projects .line-2 .main-project .pro-1:nth-child(2) .imgs_container {
+  height: 79vh;
+  width: 29vw;
+}
+#main .projects-container .projects .line-2 .pro-2 {
+  border: 2px solid white;
+  height: 44vh;
+  width: 22vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main .projects-container .projects .line-2 .pro-2 svg {
+  height: 30%;
+  width: 30%;
+}
+#main .projects-container .projects .line-2 .pro-2 .fill {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+#main .projects-container .projects .line-2 .pro-2 .fill p {
+  color: black;
+  width: 60%;
+  transition: all 0.5s ease;
+  transition-delay: 0.4s;
+  font-size: 1.1rem;
+  opacity: 0;
+  font-weight: 400;
+}
+#main .projects-container .projects .line-2 .pro-2:hover .fill {
+  transform: scale(1);
+}
+#main .projects-container .projects .line-2 .pro-2:hover .fill p {
+  transform: scale(1);
+  opacity: 1;
+}
+#main .projects-container .projects .line-3 {
+  padding: 0rem 7.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+#main .projects-container .projects .line-3 .pro-1 {
+  position: relative;
+}
+#main .projects-container .projects .line-3 .pro-1 .upper-text {
+  color: white;
+  font-family: "Plain-Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  height: 5vh;
+  overflow: hidden;
+  top: -12vh;
+  z-index: 9999999;
+}
+#main .projects-container .projects .line-3 .pro-1 .imgs_container {
+  height: 68vh;
+  width: 23vw;
+  overflow: hidden;
+}
+#main .projects-container .projects .line-3 .pro-1 .imgs_container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main .projects-container .projects .line-3 .main-project {
+  display: flex;
+  margin-top: 10%;
+  justify-content: end;
+  align-items: end;
+  gap: 2rem;
+  flex-direction: row-reverse;
+}
+#main .projects-container .projects .line-3 .main-project .pro-1 {
+  position: relative;
+}
+#main .projects-container .projects .line-3 .main-project .pro-1 .imgs_container {
+  height: 79vh;
+  width: 29vw;
+}
+#main .projects-container .projects .line-3 .main-project .pro-1 .upper-text {
+  color: white;
+  font-family: "Plain-Light";
+  font-size: 1.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: -12vh;
+  z-index: 9999999;
+}
+#main .projects-container .projects .line-3 .pro-2 {
+  border: 2px solid white;
+  height: 44vh;
+  width: 22vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#main .projects-container .projects .line-3 .pro-2 svg {
+  height: 30%;
+  width: 30%;
+}
+#main .projects-container .projects .line-3 .pro-2 .fill {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 50%;
+  background-color: white;
+  z-index: 99999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.3s ease-in-out;
+}
+#main .projects-container .projects .line-3 .pro-2 .fill p {
+  color: black;
+  width: 70%;
+  transition: all 0.5s ease;
+  transition-delay: 0.4s;
+  font-size: 1.1rem;
+  opacity: 0;
+  font-weight: 400;
+}
+#main .projects-container .projects .line-3 .pro-2:hover .fill {
+  transform: scale(1);
+}
+#main .projects-container .projects .line-3 .pro-2:hover .fill p {
+  transform: scale(1);
+  opacity: 1;
 }
 #main .about {
   min-height: 100vh;
@@ -290,11 +610,11 @@
   aspect-ratio: 1/1.1;
   display: flex;
   position: relative;
-  margin-top: -30vh;
+  margin-top: -25vh;
   margin-left: 24vw;
   justify-content: space-between;
   flex-direction: column;
-  background-color: #3F7DF4;
+  background-color: #3f7df4;
 }
 #main .about .about-bottom .achivement .underline {
   width: 100%;
@@ -430,7 +750,9 @@
   flex-direction: column;
   gap: 2rem;
 }
-#main .footer .footer-middle .left, #main .footer .footer-middle .middle p, #main .footer .footer-middle .right p {
+#main .footer .footer-middle .left,
+#main .footer .footer-middle .middle p,
+#main .footer .footer-middle .right p {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
@@ -444,4 +766,14 @@
   display: flex;
   font-size: 1.3rem;
   justify-content: start;
+}
+#main ._canvas_container {
+  z-index: 999999 !important;
+  pointer-events: none;
+}
+
+@media (max-width: 1000px) {
+  * {
+    font-size: 1vw;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+            integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <style>
+                .show{
+                    display: block;
+                    top: 7%;
+                    z-index: 99;
+                    width: 100%;
+                    transition: all 0.4s ease-in-out linear infinite;
+                }
+
+                .btnShow{
+                    display: block;
+                }   
+ 
+            </style>
+    </head>
+    <body class="font-['gilroy']">
+
+        <div class="hidden nav-part absolute px-6">
+            <div class="flex flex-col gap-6 bg-black py-7 px-4 ">
+                <p class="uppercase text-sm text-center text-white">work</p>
+                <p class="uppercase text-sm text-center text-white">services</p>
+                <p class="uppercase text-sm text-center text-white">about</p>
+                <p class="uppercase text-sm text-center text-white">jobs</p>
+                <p class="uppercase text-sm text-center text-white">news</p>
+                <p class="uppercase text-sm text-center text-white">shop</p>
+                <p class="uppercase text-sm text-center text-white">contact</p>
+                <button class="w-full py-2 bg-white text-black rounded-[3rem] text-sm">VIEW MORE</button>
+            </div>
+        </div>
+
+        <main class="px-6">
+            <header>
+                <nav class="flex justify-between items-center py-4">
+                    <h1 class="text-xl lg:text-3xl text-black font-semibold">ERIKK.</h1>
+                    <div class="right flex justify-center items-center gap-4 ">
+                        <p class="text-sm ">(0)</p>
+                        <p class="text-2xl lg:text-3xl "><i class="ri-contract-up-down-line"></i></p>
+                        <p class="text-2xl lg:text-3xl nav-btn"><i class="ri-menu-3-line"></i></p>
+                    </div>
+                </nav>
+
+           
+            </header>
+
+            <section class="hero-text w-full flex flex-col leading-none gap-3">
+                <h1 class="text-[3.6rem] tracking-tight lg:text-[16.1rem]   leading-none tracking-tighter">FASHIONWERK</h1>
+                <div class="right flex justify-between items-center lg:px-3">
+                    <p class="text-sm lg:text-lg">BRANDING AGENCY</p>
+                    <p class="text-sm lg:text-lg">FROM BERLIN</p>
+                </div>
+            </section>
+
+            <section class="hero flex flex-col lg:flex-row-reverse gap-16 lg:py-10">
+                <div class="w-full h-[100%] py-6 lg:w-[60%]">
+                    <img
+                        src="https://assets-global.website-files.com/63fd93c920392238faa118c4/63fed72aa75a04d4f083eb4a_home-hero-p-800.webp"
+                        alt class="h-full w-full object-cover">
+                </div>
+                <div
+                    class="bottom flex justify-between items-center flex-col gap-4 lg:w-[40%] lg:justify-center">
+                    <h1 class="text-5xl lg:text-8xl leading-none">UNLEASHING YOUR BRAND
+                        POTENTIAL</h1>
+                    <p class="text-md lg:text-lg">Comprehensive branding solutions that
+                        help fashion, lifestyle, and luxury brands connect with
+                        their target audience.</p>
+                </div>
+            </section>
+
+            <section class="about py-10 flex flex-col gap-8 lg:flex-row-reverse lg:justify-between lg:items-center w-full">
+                <div class="top flex flex-col gap-3 lg:w-[70%]">
+                    <div
+                        class="first flex justify-between items-center text-4xl border-b-1 py-4 font-thin">
+                        <h1>01</h1>
+                        <h1>BRANDING</h1>
+                    </div>
+                    <div
+                        class="second flex justify-between items-center text-4xl border-b-1 py-4 font-thin">
+                        <h1>02</h1>
+                        <h1>CAMPAIGNS</h1>
+                    </div>
+                    <div
+                        class="third flex justify-between items-center text-4xl border-b-1 py-4 font-thin">
+                        <h1>03</h1>
+                        <h1>E-COMMERCE</h1>
+                    </div>
+                    <div
+                        class="fourth flex justify-between items-center text-4xl border-b-1 py-4 font-thin">
+                        <h1>04</h1>
+                        <h1>SOCIAL MEDIA</h1>
+                    </div>
+                </div>
+                <div class="bottom lg:w-[30%]">
+                    <div class="h-full w-full lg:h-[100%]">
+                        <img
+                            src="https://assets-global.website-files.com/63fd93c920392238faa118c4/63ff0189107c3469a831cb0a_home-about-p-500.webp"
+                            class="w-full h-full object-cover" alt>
+                    </div>
+                </div>
+            </section>
+
+            <section class="brand flex justify-between items-start flex-row ">
+                <p class="-rotate-90 w-25 pr-8 ">WHAT WE DO</p>
+                <div class="right w-75 flex flex-col gap-4">
+                    <h1 class="text-6xl leading-none tracking-tighter">Tailored Brand Solutions</h1>
+                    <p>We believe that every brand has a unique story to tell
+                        and our mission is to help you bring that story to life
+                        through exceptional branding, marketing, e-commerce, and
+                        social media strategies.</p>
+                </div>
+
+            </section>
+
+            <section class="services">
+                <h1 class="border-b-1 text-4xl pb-6 pt-14 lg:text-center">OUR SERVICES</h1>
+                
+             <div class="lg:flex flex-row ">
+                <div class="service-1 lg:flex-1  flex flex-col border-b-1 py-5">
+                    <div class="top">
+                     <h3 class="text-3xl">BRANDING</h3>
+                     <p class="py-2">Establish a strong brand identity that sets you apart.</p>
+                    </div>
+                     <div class="btn pt-4 pb-3 flex flex-row gap-4 items-center ">
+                         <i class="ri-arrow-right-up-line py-3 px-4 bg-black text-white text-xl rounded-full"></i>
+                         <p>ABOUT BRANDING</p>
+                     </div>
+                 </div>
+                 <div class="service-2 lg:flex-1  flex flex-col border-b-1 py-5">
+                    <div class="top">
+                     <h3 class="text-3xl uppercase" >Campaigns</h3>
+                     <p class="py-2">Utilize data and analytics to optimize your marketing performance.</p>
+                    </div>
+                     <div class="btn pt-4 pb-3 flex flex-row gap-4 items-center ">
+                         <i class="ri-arrow-right-up-line py-3 px-4 bg-black text-white text-xl rounded-full"></i>
+                         <p class="uppercase">ABOUT Campaigns</p>
+                     </div>
+                 </div>
+                 <div class="service-3 lg:flex-1  flex flex-col border-b-1 py-5">
+                    <div class="top">
+                     <h3 class="text-3xl">E-COMMERCE</h3>
+                     <p class="py-2">Develop customized online stores that reflect your brand and vision.</p>
+                    </div>
+                     <div class="btn pt-4 pb-3 flex flex-row gap-4 items-center ">
+                         <i class="ri-arrow-right-up-line py-3 px-4 bg-black text-white text-xl rounded-full"></i>
+                         <p class="uppercase">About e-Commerce</p>
+                     </div>
+                 </div>
+                 <div class="service-4 lg:flex-1  flex flex-col border-b-1 py-5">
+                    <div class="top">
+                     <h3 class="text-3xl uppercase">Social Media</h3>
+                     <p class="py-2">Create engaging and shareable content that drives brand awareness.</p>
+                    </div>
+                     <div class="btn pt-4 pb-3 flex flex-row gap-4 items-center ">
+                         <i class="ri-arrow-right-up-line py-3 px-4 bg-black text-white text-xl rounded-full"></i>
+                         <p class="uppercase">About Social Media</p>
+                     </div>
+                 </div>
+             </div>
+                
+            </section>
+        </main>
+        <footer>
+            <div class="footer flex py-10 flex flex-col text-center justify-center items-center bg-black text-white gap-4">
+                <h1 class="text-6xl">LET'S CREATE</h1>
+                <p class="uppercase text-4xl text-center">unleasing the potential of <br> your brand </p>
+                <button class="px-6 py-2 rounded-[2rem] text-black bg-white">GET IN TOUCH <i class="ri-arrow-right-up-line"></i></button>
+            </div>
+        </footer>
+
+    </body>
+
+
+    <script src="./script.js"></script>
+</html>
