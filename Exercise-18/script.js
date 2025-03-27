@@ -4,16 +4,16 @@ let counter = document.querySelector(".counter");
 
 let grow = 0;
 
-btn.addEventListener("click", function () {
-  let set = setInterval(() => {
-    grow++;
-    counter.innerHTML = grow + "%";
-    progress.style.width = grow + "%";
-  }, 30);
+    btn.addEventListener("click", function () {
+        let set = setInterval(() => {
+            if (grow >= 100) { 
+              clearInterval(set);
+            } else {
+              grow++;
+              counter.innerHTML = grow + "%";
+              progress.style.width = grow + "%";
+            }
+          }, 14);
+    }, 14);
 
-  setTimeout(() => {
-    clearInterval(set);
-    btn.style.backgroundColor = "gray";
-    btn.innerHTML = "Downloaded";
-  }, 3001);
-});
+
