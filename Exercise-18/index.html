@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="w-full h-screen bg-zinc-300 flex justify-center items-center font-[gilroy]">
+
+
+    <div class="song-box bg-white rounded-lg px-8 py-5 w-103 flex flex-col gap-3">
+        <div class="flex flex-col justify-center items-end gap-3">
+            <div class="progress w-full h-8 bg-gray-300 rounded-lg">
+                <div class="progress-success w-0 h-8 bg-green-500 rounded-lg"></div>
+            </div>
+            <p class="counter text-lg font-bold">0%</p>
+        </div>
+        <div class="flex  justify-between items-center gap-3">
+            <p class="text-2xl">London Song</p>
+            <button class="btn px-8 py-3 bg-green-400 text-lg font-bold rounded-xl text-white active:scale-[0.95]">Download</button>
+        </div>
+    </div>
+
+
+     <script src="./script.js"></script>
+</body>
+</html>
