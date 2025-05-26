@@ -34,9 +34,9 @@ const Create = () => {
     <input className='block outline-0 border-b p-3 my-2' type="text" placeholder='Write Instructions ,' {...register("instructions")}/>
 
     <select {...register("category")} className='block outline-0 border-b p-3 my-2' >
-        <option value="cate1" className='bg-gray-800'>Category 1</option>
-        <option value="cate2" className='bg-gray-800'>Category 2</option>
-        <option value="cate3" className='bg-gray-800'>Category 3</option>
+        <option value="Bakery" className='bg-gray-800'>Bakery</option>
+        <option value="Fast Food" className='bg-gray-800'>Fast Food</option>
+        <option value="Home Made" className='bg-gray-800'>Home Made</option>
     </select>
 
     <button className=' block bg-gray-900 rounded-md px-4 py-2 mt-5'>Save Recipe</button>
